@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
-PRODUCT_NAME := arrow_vayu
+PRODUCT_NAME := havoc_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
@@ -25,6 +25,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-DEVICE_MAINTAINER := kubersharma001
-TARGET_INCLUDE_PIXEL_CHARGER := true
+# havoc specific props
+HAVOC_BUILD_TYPE := Personal
+HAVOC_MAINTAINER := thatweirdkiddo
+HAVOC_GROUP_URL := https://t.me/pocox3proglobalofficial
 
