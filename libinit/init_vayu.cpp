@@ -123,7 +123,7 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 void vendor_load_properties() {
 //   SafetyNet workaround
     char const fp[] = "google/coral/coral:11/RQ3A.210605.005/7349499:user/release-keys";
-    char const fp_desc[] = "coral:11/RQ3A.210605.005/7349499:user/release-keys";
+    char const fp_desc[] = "coral-user 11 RQ3A.210605.005 7349499 release-keys";
 
     string region = android::base::GetProperty("ro.boot.hwc", "");
 
